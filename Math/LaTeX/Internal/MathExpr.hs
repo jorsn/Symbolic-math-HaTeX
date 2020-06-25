@@ -353,7 +353,7 @@ setCompr :: LaTeXC l
   => CAS' γ (Infix l) (Encapsulation l) (SymbolD σ l)
    -> CAS' γ (Infix l) (Encapsulation l) (SymbolD σ l)
     -> CAS' γ (Infix l) (Encapsulation l) (SymbolD σ l)
-setCompr elm cnd = set $ opR 0 (raw"\\middle|") elm cnd
+setCompr elm cnd = set $ opR 0 (raw"~\\middle|~") elm cnd
 
 
 infix 5 <.<, ≤.<, <.≤, ≤.≤
